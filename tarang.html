@@ -1315,7 +1315,7 @@ document.getElementById('btnUploadFile').onchange = (e) => {
 };
 
 /* ---------- ดึงข้อมูลจาก Google Sheets (ทุกแผ่นงาน) ---------- */
-const SHEET_CSV_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pub?gid=GID&single=true&output=csv';
+const SHEET_CSV_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pub?output=csv';
 
 function parseCSV(text){
   const rows=[]; let row=[], cell='', q=false;
