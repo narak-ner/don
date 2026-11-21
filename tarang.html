@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)https://donmobile.vercel.app/ -->
-<html data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="stylesheet" href="tarang.css">
-</head><body>
+<html data-theme="light" style="--bg-base: #2C71B8; --ground: #b1cae5; --brand: #2C71B8; --brand-deep: #235181; --brand-wash: #e6eef6; --accent: #2C71B8; --accent-wash: #d9e5f2;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="stylesheet" href="tarang.css">
+<style id="pageCss">@page{size:210mm 297mm}
+.paper{width:210mm;min-height:277mm}</style></head><body>
 <title>ตารางผ่อน ดลโมบาย</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <a class="btn" id="btnHome" href="index.html" title="กลับหน้าหลัก">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
         หน้าหลัก
       </a>
       <div class="spacer"></div>
@@ -44,7 +44,7 @@
   </div>
 
   <div class="rail">
-    <div class="rail-in" id="rail" role="tablist" aria-label="ตารางผ่อนทั้งหมด"><button type="button" class="btn sm" style="flex: 0 0 auto;">+ ตารางใหม่</button></div>
+    <div class="rail-in" id="rail" role="tablist" aria-label="ตารางผ่อนทั้งหมด"><div class="tab" role="tab" tabindex="0" aria-selected="true"><span class="n"><i class="cdot" style="background:#1A73E8"></i>สินเชื่อ · มือ 1 25%</span><span class="d">0 รุ่น · อัปเดต 21/11/69</span></div><button type="button" class="btn sm" style="flex: 0 0 auto;">+ ตารางใหม่</button></div>
   </div>
 
   
@@ -52,45 +52,14 @@
   <div class="wrap">
     <!-- sheet meta -->
     <section class="panel">
-      <div class="panel-head">
-        <span class="eyebrow">รายละเอียดตาราง</span>
-        <div class="spacer"></div>
-        <button class="btn sm" id="btnDup" type="button">คัดลอกตารางนี้</button>
-        <button class="btn sm danger" id="btnDelSheet" type="button">ลบตารางนี้</button>
-      </div>
+      
       <div class="panel-body">
-        <div class="fields">
-          <div class="f">
-            <label for="m-provider">บริษัทสินเชื่อ</label>
-            <input id="m-provider" list="providerList" placeholder="เช่น VNC">
-            <datalist id="providerList">
-              <option value="VNC"></option>
-              <option value="Senpay By Isarawat"></option>
-              <option value="SG Finance"></option>
-            </datalist>
-          </div>
-          <div class="f">
-            <label for="m-condition">ประเภทเครื่อง</label>
-            <input id="m-condition" list="condList" placeholder="เช่น มือ 1">
-            <datalist id="condList">
-              <option value="มือ 1"></option>
-              <option value="มือ 2"></option>
-            </datalist>
-          </div>
-          <div class="f">
-            <label for="m-rate">เรทดาวน์ระบบ (%)</label>
-            <input id="m-rate" inputmode="decimal" placeholder="25">
-          </div>
-          <div class="f">
-            <label for="m-date">วันที่อัปเดต</label>
-            <input id="m-date" type="date" readonly="" title="อัปเดตอัตโนมัติทุกวัน" style="background:var(--surface-2);color:var(--ink-3);cursor:default">
-          </div>
-        </div>
+        
 
         <div class="fields" style="margin-top:14px">
           <div class="f" style="grid-column:1/-1">
             <label>สีของตาราง</label>
-            <div class="colorpick" id="colorPick" role="group" aria-label="เลือกสีของตาราง"><button type="button" class="swatch" title="สีน้ำเงิน" aria-label="สีน้ำเงิน" aria-pressed="false" style="background: linear-gradient(135deg, rgb(44, 113, 184) 0px, rgb(44, 113, 184) 55%, rgb(27, 78, 133) 55%, rgb(27, 78, 133) 100%);"></button><button type="button" class="swatch" title="สีเขียวน้ำทะเล" aria-label="สีเขียวน้ำทะเล" aria-pressed="false" style="background: linear-gradient(135deg, rgb(15, 127, 140) 0px, rgb(15, 127, 140) 55%, rgb(10, 91, 101) 55%, rgb(10, 91, 101) 100%);"></button><button type="button" class="swatch" title="สีเขียว" aria-label="สีเขียว" aria-pressed="false" style="background: linear-gradient(135deg, rgb(28, 127, 87) 0px, rgb(28, 127, 87) 55%, rgb(19, 96, 65) 55%, rgb(19, 96, 65) 100%);"></button><button type="button" class="swatch" title="สีแดง" aria-label="สีแดง" aria-pressed="false" style="background: linear-gradient(135deg, rgb(190, 59, 51) 0px, rgb(190, 59, 51) 55%, rgb(141, 42, 36) 55%, rgb(141, 42, 36) 100%);"></button><button type="button" class="swatch" title="สีส้ม" aria-label="สีส้ม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(217, 130, 43) 0px, rgb(217, 130, 43) 55%, rgb(164, 94, 23) 55%, rgb(164, 94, 23) 100%);"></button><button type="button" class="swatch" title="สีม่วง" aria-label="สีม่วง" aria-pressed="false" style="background: linear-gradient(135deg, rgb(109, 74, 174) 0px, rgb(109, 74, 174) 55%, rgb(78, 50, 130) 55%, rgb(78, 50, 130) 100%);"></button><button type="button" class="swatch" title="สีชมพู" aria-label="สีชมพู" aria-pressed="false" style="background: linear-gradient(135deg, rgb(194, 68, 126) 0px, rgb(194, 68, 126) 55%, rgb(142, 46, 92) 55%, rgb(142, 46, 92) 100%);"></button><button type="button" class="swatch" title="สีเทาเข้ม" aria-label="สีเทาเข้ม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(68, 86, 107) 0px, rgb(68, 86, 107) 55%, rgb(42, 57, 73) 55%, rgb(42, 57, 73) 100%);"></button><label class="swatch swatch-custom" title="เลือกสีเอง" aria-pressed="true" style="background: rgb(255, 0, 0);"><input type="color" aria-label="เลือกสีกำหนดเอง"></label></div>
+            <div class="colorpick" id="colorPick" role="group" aria-label="เลือกสีของตาราง"><button type="button" class="swatch" title="สีแดง" aria-label="สีแดง" aria-pressed="false" style="background: linear-gradient(135deg, rgb(211, 47, 47) 0px, rgb(211, 47, 47) 55%, rgb(158, 31, 27) 55%, rgb(158, 31, 27) 100%);"></button><button type="button" class="swatch" title="สีน้ำเงิน" aria-label="สีน้ำเงิน" aria-pressed="true" style="background: linear-gradient(135deg, rgb(26, 115, 232) 0px, rgb(26, 115, 232) 55%, rgb(18, 87, 168) 55%, rgb(18, 87, 168) 100%);"></button><button type="button" class="swatch" title="สีเขียว" aria-label="สีเขียว" aria-pressed="false" style="background: linear-gradient(135deg, rgb(24, 128, 56) 0px, rgb(24, 128, 56) 55%, rgb(15, 94, 40) 55%, rgb(15, 94, 40) 100%);"></button><button type="button" class="swatch" title="สีส้ม" aria-label="สีส้ม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(199, 80, 0) 0px, rgb(199, 80, 0) 55%, rgb(140, 54, 0) 55%, rgb(140, 54, 0) 100%);"></button><button type="button" class="swatch" title="สีม่วง" aria-label="สีม่วง" aria-pressed="false" style="background: linear-gradient(135deg, rgb(156, 39, 176) 0px, rgb(156, 39, 176) 55%, rgb(106, 27, 143) 55%, rgb(106, 27, 143) 100%);"></button><button type="button" class="swatch" title="สีเขียวน้ำทะเล" aria-label="สีเขียวน้ำทะเล" aria-pressed="false" style="background: linear-gradient(135deg, rgb(0, 131, 143) 0px, rgb(0, 131, 143) 55%, rgb(0, 90, 102) 55%, rgb(0, 90, 102) 100%);"></button><button type="button" class="swatch" title="สีทอง" aria-label="สีทอง" aria-pressed="false" style="background: linear-gradient(135deg, rgb(138, 109, 0) 0px, rgb(138, 109, 0) 55%, rgb(94, 75, 0) 55%, rgb(94, 75, 0) 100%);"></button><button type="button" class="swatch" title="สีชมพู" aria-label="สีชมพู" aria-pressed="false" style="background: linear-gradient(135deg, rgb(216, 27, 96) 0px, rgb(216, 27, 96) 55%, rgb(143, 27, 77) 55%, rgb(143, 27, 77) 100%);"></button><button type="button" class="swatch" title="สีคราม" aria-label="สีคราม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(63, 81, 181) 0px, rgb(63, 81, 181) 55%, rgb(40, 53, 147) 55%, rgb(40, 53, 147) 100%);"></button><button type="button" class="swatch" title="สีเขียวเข้ม" aria-label="สีเขียวเข้ม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(46, 125, 50) 0px, rgb(46, 125, 50) 55%, rgb(27, 77, 33) 55%, rgb(27, 77, 33) 100%);"></button><button type="button" class="swatch" title="สีฟ้า" aria-label="สีฟ้า" aria-pressed="false" style="background: linear-gradient(135deg, rgb(2, 119, 189) 0px, rgb(2, 119, 189) 55%, rgb(1, 87, 155) 55%, rgb(1, 87, 155) 100%);"></button><button type="button" class="swatch" title="สีแดงเข้ม" aria-label="สีแดงเข้ม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(183, 28, 28) 0px, rgb(183, 28, 28) 55%, rgb(127, 14, 14) 55%, rgb(127, 14, 14) 100%);"></button><button type="button" class="swatch" title="สีเทาเข้ม" aria-label="สีเทาเข้ม" aria-pressed="false" style="background: linear-gradient(135deg, rgb(84, 110, 122) 0px, rgb(84, 110, 122) 55%, rgb(52, 66, 78) 55%, rgb(52, 66, 78) 100%);"></button><button type="button" class="swatch" title="สีน้ำตาล" aria-label="สีน้ำตาล" aria-pressed="false" style="background: linear-gradient(135deg, rgb(109, 76, 65) 0px, rgb(109, 76, 65) 55%, rgb(74, 50, 41) 55%, rgb(74, 50, 41) 100%);"></button><button type="button" class="swatch" title="สีดำ" aria-label="สีดำ" aria-pressed="false" style="background: linear-gradient(135deg, rgb(55, 71, 79) 0px, rgb(55, 71, 79) 55%, rgb(31, 42, 48) 55%, rgb(31, 42, 48) 100%);"></button><label class="swatch swatch-custom" title="เลือกสีเอง" aria-pressed="false"><input type="color" aria-label="เลือกสีกำหนดเอง"></label></div>
             <span class="hint">สีนี้ใช้กับหัวใบพิมพ์ แถวสลับสี และช่องไฮไลต์ “ดาวน์หน้าร้าน” — ตั้งแยกได้ทีละตาราง</span>
           </div>
         </div>
@@ -106,12 +75,22 @@
         <button class="btn sm primary" id="btnFetchSheet" type="button" title="ดึงข้อมูลจาก Google Sheets">⇩ ดึงข้อมูลจากชีต</button>
         <button class="btn sm" id="btnAddRow" type="button" title="เพิ่มรุ่นชั่วคราวในแอป — ไม่รวมใน Google Sheets และจะหายไปเมื่อดึงข้อมูลจากชีตใหม่">+ เพิ่มรุ่นชั่วคราว</button>
       </div>
-      <div class="gridwrap"><table class="grid" id="grid"></table></div>
+      <div class="gridwrap"><table class="grid" id="grid"><thead><tr><th class="">
+      <span class="colname">รุ่น</span></th><th class="">
+      <span class="colname">ความจุ</span></th><th class="g-internal">
+      <span class="colname">ยอดจัด</span></th><th class="g-internal">
+      <span class="colname">ดาวน์ระบบ</span></th><th class="">
+      <span class="colname">ดาวน์หน้าร้าน</span></th><th class="g-tenor">
+      <span class="colname">12 งวด</span></th><th class="g-tenor">
+      <span class="colname">15 งวด</span></th><th class="g-tenor">
+      <span class="colname">18 งวด</span></th><th class="g-internal">
+      <span class="colname">ยอดสุทธิ</span></th><th class="">
+      <span class="colname">เงินสด</span></th><th></th></tr></thead><tbody><tr><td colspan="11"><div class="empty">ยังไม่มีข้อมูล กด “+ เพิ่มรุ่นชั่วคราว” เพื่อเริ่ม</div></td></tr></tbody></table></div>
       <div class="panel-body" style="border-top:1px solid var(--line)">
         <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px">
           <span class="eyebrow">คอลัมน์ที่จะแสดงบนใบพิมพ์</span>
         </div>
-        <div id="printCols"><label class="check"><input type="checkbox" id="pc-sysDown" checked=""> ดาวน์ระบบ</label><label class="check"><input type="checkbox" id="pc-down" checked=""> ดาวน์หน้าร้าน</label><label class="check"><input type="checkbox" id="pc-finance" checked=""> ยอดจัด</label><label class="check"><input type="checkbox" id="pc-entitle" checked=""> ยอดสุทธิ</label><label class="check"><input type="checkbox" id="pc-cash" checked=""> ราคาเงินสด</label></div>
+        <div id="printCols"><label class="check"><input type="checkbox" id="pc-sysDown" checked=""> ดาวน์ระบบ</label><label class="check"><input type="checkbox" id="pc-down" checked=""> ดาวน์หน้าร้าน</label><label class="check"><input type="checkbox" id="pc-finance" checked=""> ยอดจัด</label><label class="check"><input type="checkbox" id="pc-entitle" checked=""> ยอดสุทธิ</label><label class="check"><input type="checkbox" id="pc-cash"> ราคาเงินสด</label></div>
         <p class="hint" style="margin:10px 0 0">
           ลำดับคอลัมน์เรียงตามชีต Google Sheets เสมอ<br>
           ช่องพื้นหลังส้มคือ <b>ข้อมูลต้นทุนภายใน</b> — ปิดไว้ตอนพิมพ์เพื่อไม่ให้ลูกค้าเห็น
@@ -121,7 +100,20 @@
   </div>
 </div>
 
-<div id="printRoot"></div>
+<div id="printRoot"><section class="paper portrait" style="--pc:#1A73E8;--pd:#1257A8;--pwash:#ddeafc;--phe:#FDF2E4;--phe2:#FBE9D2;--phink:#A8611A">
+    <div class="paper-head">
+      <img class="paper-logo" src="data:image/png;base64,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" alt="">
+      <div class="paper-id">
+        <div class="paper-shop">ดลโมบาย</div>
+      </div>
+      <div class="paper-meta">
+        <div class="paper-title">สินเชื่อ · มือ 1</div>
+        <div class="paper-rate">ดาวน์ระบบ 25%</div>
+        <div class="paper-date">อัปเดตล่าสุด <b>21/11/69</b> (21 พฤศจิกายน 2569)</div>
+      </div>
+    </div>
+    <table class="paper-table"><thead><tr><th class="l">รุ่น</th><th class="l">ความจุ</th></tr></thead><tbody><tr><td class="l" colspan="2">ยังไม่มีข้อมูล</td></tr></tbody></table>
+  </section></div>
 
 <!-- shop modal -->
 <div class="modal" id="shopModal" hidden="">
@@ -173,7 +165,7 @@
     <div class="body" style="display:flex;flex-direction:column;gap:14px">
       <div>
         <div class="eyebrow" style="margin-bottom:8px">เลือกสีพื้นหลัง</div>
-        <div class="bgpicks" id="bgPicks"></div>
+        <div class="bgpicks" id="bgPicks"><button type="button" class="swatch" title="#2C71B8" aria-label="สี #2C71B8" style="background: rgb(44, 113, 184);"></button><button type="button" class="swatch" title="#0F7F8C" aria-label="สี #0F7F8C" style="background: rgb(15, 127, 140);"></button><button type="button" class="swatch" title="#1C7F57" aria-label="สี #1C7F57" style="background: rgb(28, 127, 87);"></button><button type="button" class="swatch" title="#D9822B" aria-label="สี #D9822B" style="background: rgb(217, 130, 43);"></button><button type="button" class="swatch" title="#BE3B33" aria-label="สี #BE3B33" style="background: rgb(190, 59, 51);"></button><button type="button" class="swatch" title="#6D4AAE" aria-label="สี #6D4AAE" style="background: rgb(109, 74, 174);"></button><button type="button" class="swatch" title="#C2447E" aria-label="สี #C2447E" style="background: rgb(194, 68, 126);"></button><button type="button" class="swatch" title="#44566B" aria-label="สี #44566B" style="background: rgb(68, 86, 107);"></button><button type="button" class="swatch" title="#0A84FF" aria-label="สี #0A84FF" style="background: rgb(10, 132, 255);"></button><button type="button" class="swatch" title="#34C759" aria-label="สี #34C759" style="background: rgb(52, 199, 89);"></button></div>
         <label class="fld-inline" style="margin-top:10px"><span>สีกำหนดเอง</span> <input type="color" id="bgCustom" aria-label="เลือกสีพื้นหลังเอง" style="width:54px;height:36px;padding:0;border:1px solid var(--line-strong);border-radius:8px;background:var(--surface)"></label>
       </div>
       <label class="check"><input type="checkbox" id="bgAnim"> เปิดเอฟเฟกต์เคลื่อนไหว (แบบสายน้ำ)</label>
@@ -556,11 +548,13 @@ function renderMeta(){
   bind('m-rate','rate',true);
   const today = todayISO();
   s.date = today;
-  document.getElementById('m-date').value = today;
+  const dateEl=document.getElementById('m-date');
+  if(dateEl) dateEl.value = today;
   save(); renderRail();
 
   function bind(id, key, isNum){
     const el=document.getElementById(id);
+    if(!el) return;   /* ช่องนี้ถูกเอาออกจากหน้าแล้ว — ข้ามไป ไม่ให้ทั้งสคริปต์พัง */
     el.value = s[key] ?? '';
     el.oninput=()=>{ s[key]= isNum ? (num(el.value) ?? '') : el.value; save(); renderRail(); renderPrint(); if(isNum) renderGrid(); };
   }
@@ -853,7 +847,8 @@ document.getElementById('btnBlankRow').onclick=()=>{
   document.getElementById('pickModal').hidden=true;
   toast('เพิ่มแถวว่างแล้ว — เลือก “✎ พิมพ์เอง…” ในช่องรุ่น');
 };
-document.getElementById('btnDup').onclick=()=>{
+const btnDupEl=document.getElementById('btnDup');
+if(btnDupEl) btnDupEl.onclick=()=>{
   const c=structuredClone(sheet()); c.id=uid(); c.rows.forEach(r=>r.id=uid());
   S.sheets.push(c); S.activeId=c.id; save(); renderAll(); toast('คัดลอกตารางแล้ว — แก้เรทได้เลย');
 };
@@ -873,7 +868,8 @@ function deleteSheet(id){
     });
   });
 }
-document.getElementById('btnDelSheet').onclick=()=>deleteSheet(sheet().id);
+const btnDelSheetEl=document.getElementById('btnDelSheet');
+if(btnDelSheetEl) btnDelSheetEl.onclick=()=>deleteSheet(sheet().id);
 document.getElementById('confirmYes').onclick=()=>{
   document.getElementById('confirmModal').hidden=true;
   const cb=confirmCb; confirmCb=null; if(cb) cb();
@@ -1315,7 +1311,9 @@ document.getElementById('btnUploadFile').onchange = (e) => {
 };
 
 /* ---------- ดึงข้อมูลจาก Google Sheets (ทุกแผ่นงาน) ---------- */
-const SHEET_CSV_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pub?output=csv';
+const SHEET_CSV_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pub?gid=GID&single=true&output=csv';
+/* แผ่นแรกของชีต (gid 0) — ใช้เป็นทางสำรองเมื่ออ่านรายชื่อแผ่นงานไม่ได้ */
+const SHEET_CSV_PLAIN = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pub?output=csv';
 
 function parseCSV(text){
   const rows=[]; let row=[], cell='', q=false;
@@ -1378,7 +1376,7 @@ function parseSheetName(name){
   return {provider:String(name).trim()||'สินเชื่อ', condition:'มือ 1', rate:25};
 }
 
-const SHEET_PUBHTML='https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pub?output=csv';
+const SHEET_PUBHTML='https://docs.google.com/spreadsheets/d/e/2PACX-1vQddMtyJDO7ALPMqiYCuWIjkjB2tdcTgsp3ExWzjrdaVriC0H_qCo2zggnND7QVYGygJXEtMUUDY71y/pubhtml';
 const SHEET_META_PROXIES=['https://api.allorigins.win/raw?url=','https://api.cors.lol/?url=','https://corsproxy.io/?url=','https://api.codetabs.com/v1/proxy?quest='];
 function parseSheetItems(html){
   const items=[]; const re=/items\.push\(\{name: \"([^\"]+)\", pageUrl: \"[^\"]*?gid=(\d+)\"/g; let m;
@@ -1386,6 +1384,16 @@ function parseSheetItems(html){
   return items;
 }
 async function fetchSheetMeta(){
+  /* 1) อ่านรายชื่อแผ่นงานจาก pubhtml ของ Google ตรง ๆ — Google เปิด CORS ไว้ (ACAO: null)
+        จึงใช้ได้แม้เปิดไฟล์จากเครื่อง (file://) */
+  try{
+    const res=await fetch(SHEET_PUBHTML,{cache:'no-store'});
+    if(res.ok){
+      const items=parseSheetItems(await res.text());
+      if(items.length) return items;
+    }
+  }catch(_){}
+  /* 2) เซิร์ฟเวอร์ท้องถิ่น (ถ้ามี) */
   try{
     const res=await fetch('/sheet-meta',{cache:'no-store'});
     if(res.ok) return await res.json();
@@ -1394,6 +1402,7 @@ async function fetchSheetMeta(){
     const res=await fetch('/api/sheet-meta',{cache:'no-store'});
     if(res.ok) return await res.json();
   }catch(_){}
+  /* 3) ตัวกลางสาธารณะ (เผื่อเปิดผ่าน http แล้ว Google ไม่ให้ CORS) */
   for(const px of SHEET_META_PROXIES){
     try{
       const ctl=new AbortController();
@@ -1405,11 +1414,12 @@ async function fetchSheetMeta(){
       if(items.length) return items;
     }catch(_){}
   }
-  throw new Error('ไม่สามารถอ่านรายชื่อแผ่นงานได้ — เช็กอินเทอร์เน็ต หรือเปิดผ่านลิงก์ http://127.0.0.1:8799/ผ่อน.html แล้วลองใหม่');
+  /* 4) อ่านรายชื่อแผ่นไม่ได้ → ยังดึงแผ่นแรกของชีตได้ เพราะ CSV ที่ publish เปิด CORS ไว้ */
+  return [{name:'VNC มือ1 25%', gid:null}];
 }
 
 async function fetchCSVText(gid){
-  const url=SHEET_CSV_BASE.replace('GID',gid)+'&_='+Date.now();
+  const url=(gid==null?SHEET_CSV_PLAIN:SHEET_CSV_BASE.replace('GID',gid))+'&_='+Date.now();
   /* 1) ดึง Google ตรง (ใช้ได้ถ้าเปิดจากหน้าเว็บที่ deploy) */
   try{
     const res=await fetch(url,{cache:'no-store'});
@@ -1523,7 +1533,12 @@ initBg();
 initNotice();
 renderAll();
 applyPaper();
+/* เปิดไฟล์ตรง ๆ (file://) เบราว์เซอร์จะบล็อกการดึง Google Sheets — แนะนำให้เปิดผ่าน server.py */
+if(location.protocol==='file:'){
+  setTimeout(()=>toast('เปิดไฟล์ตรง ๆ จะดึงข้อมูลจากชีตไม่ได้ — ใช้ “เปิดตารางผ่อน.bat” แทน'),1500);
+}
 </script>
+
 
 
 </body></html>
